@@ -78,8 +78,8 @@
 
     .container>img {
         width: 100%;
-        height: auto;
     }
+
 
     .hero {
         width: 100%;
@@ -89,7 +89,7 @@
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
         width: 100%;
         line-height: 1.3;
     }
