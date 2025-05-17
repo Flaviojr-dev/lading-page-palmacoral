@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading Page</title>
+    <link rel="stylesheet" href="styles/header/header.css">
+    <link rel="stylesheet" href="styles/section1/hero.css">
+</head>
+
+<body>
+    <div class="hero-wrapper">
+        <header>
+            <img src="assets/img/Logo.png" alt="Logo Palma Coral">
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Passeios</a></li>
+                    <li><a href="#">Translados</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Jeri</a></li>
+                    <li><a href="#">Contao</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-primary">Orçamento</button>
+
+            <!-- Botão hambúrguer (mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <!-- Menu mobile (oculto por padrão) -->
+            <div class="menu-mobile" id="menu-mobile">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Passeios</a></li>
+                    <li><a href="#">Translados</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Jeri</a></li>
+                    <li><a href="#">Contao</a></li>
+                    <li><button class="btn-primary">Orçamento</button></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="container">
+                <div class="hero">
+                    <h1>Explore os melhores passeios turísticos do <span>Ceará!</span></h1>
+                    <div class="descri">
+                        <p>Transfer e Passeios com o melhor preço da região.</p>
+                        <p>Agência 100% credenciada.</p>
+                        <p>Veículos 4x4, segurança, conforto e rapidez.</p>
+                    </div>
+                    <div class="botoes">
+                        <button class="btn-secundary">Orçamento</button>
+                        <button class="btn-secundary-2">Nossos serviços</button>
+                    </div>
+                </div>
+                <img src="/assets/img/hero.png" alt="">
+            </section>
+        </main>
+    </div>
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-mobile');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

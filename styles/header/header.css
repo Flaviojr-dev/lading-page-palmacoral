@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+}
+
+nav>ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: black;
+}
+
+.btn-primary {
+    border: 1px solid orange;
+    background-color: white;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: orange;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+li>a:hover {
+    color: orange;
+}
+
+.hero-wrapper {
+    background-image: url('/assets/img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Garante que o fundo cubra todo o conteúdo */
+    width: 100%;
+}
+
+/* HAMBÚRGUER E MENU MOBILE */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-mobile a {
+    color: black;
+}
+
+.menu-mobile a:hover {
+    color: orange;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    nav.nav-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+
+    .menu-mobile .btn-primary {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
